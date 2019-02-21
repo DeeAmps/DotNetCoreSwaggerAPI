@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.18.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OracleHR.Helpers\OracleHR.Helpers.csproj" />
+    <ProjectReference Include="..\OracleHR.Models\OracleHR.Models.csproj" />
+  </ItemGroup>
+
+</Project>
