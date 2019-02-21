@@ -19,7 +19,7 @@ namespace OracleHR.Api.Controllers
         public RegionController(IConfiguration configuration)
         {
             _config = configuration;
-            _regionRepo = new RegionRepositoryImpl(_config.GetSection("ConnectionStrings").GetSection("DbContext").ToString());
+            _regionRepo = new RegionRepositoryImpl(_config.GetConnectionString("DbContext"));
         }
 
         [Route("getAllRegions")]
