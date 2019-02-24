@@ -8,14 +8,12 @@ namespace OracleHR.Repository.interfaces
 {
     public interface IRegionRepository
     {
-        Task<List<Region>> GetRegions();
+        Task<List<Region>> GetRegionsAsync();
 
-        Task<Region> GetRegion(int id);
+        Task<Region> UpdateRegionAsync(Region region, int regionId);
 
-        Task<Region> UpdateRegion(Region region, int regionId);
+        Task<Region> AddNewRegionAsync(Region region);
 
-        Task<Region> AddNewRegion(Region region);
-
-        Task<int> DeleteRegion(int regionId);
+        Task<int> DeleteRegionAsync(int regionId);
     }
 }

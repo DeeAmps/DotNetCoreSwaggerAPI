@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OracleHR.Api</name>
+    </assembly>
+    <members>
+        <member name="M:OracleHR.Api.Controllers.CountryController.GetAllCountries">
+            <summary>
+            Get all Countries.
+            </summary>
+            <remarks>
+             Get all Countries from Oracle HR Database
+            </remarks>
+            <returns>A List of Countries</returns>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.CountryController.GetSingleCountry(System.String)">
+            <summary>
+            Get a single Country.
+            </summary>
+            <remarks>
+            Get a single Country from Oracle HR Database
+            </remarks>
+            <returns>A Single Country</returns>
+            <response code="200">Success</response>
+            <response code="404">Not Found</response>
+            <param name="countryId">Country Id</param>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.DepartmentController.GetAllDepartments">
+            <summary>
+            Get all Departments.
+            </summary>
+            <remarks>
+             Get all Departments from Oracle HR Database
+            </remarks>
+            <returns>A List of Departments</returns>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.DepartmentController.GetSingleCountry(System.Int32)">
+            <summary>
+            Get a single Department.
+            </summary>
+            <remarks>
+            Get a single Department from Oracle HR Database
+            </remarks>
+            <returns>A Single Department</returns>
+            <response code="200">Success</response>
+            <response code="404">Not Found</response>
+            <param name="departmentId">Department Id</param>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.EmployeeController.GetAllEmployees">
+            <summary>
+            Get all Employees.
+            </summary>
+            <remarks>
+             Get all Employees from Oracle HR Database
+            </remarks>
+            <returns>A List of Employees</returns>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.EmployeeController.GetSingleEmployee(System.Int32)">
+            <summary>
+            Get a single Employee.
+            </summary>
+            <remarks>
+            Get a single Employee from Oracle HR Database
+            </remarks>
+            <returns>A Single Employee</returns>
+            <response code="200">Success</response>
+            <response code="404">Not Found</response>
+            <param name="employeeId">Employee Id</param>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.JobController.GetAllJobs">
+            <summary>
+            Get all Jobs.
+            </summary>
+            <remarks>
+             Get all Jobs from Oracle HR Database
+            </remarks>
+            <returns>A List of Jobs</returns>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.JobController.GetSingleJob(System.String)">
+            <summary>
+            Get a single Job.
+            </summary>
+            <remarks>
+            Get a single Job from Oracle HR Database
+            </remarks>
+            <returns>A Single Job</returns>
+            <response code="200">Success</response>
+            <response code="404">Not Found</response>
+            <param name="jobId">Job Id</param>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.LocationController.GetAllLocations">
+            <summary>
+            Get all Locations.
+            </summary>
+            <remarks>
+             Get all Locations from Oracle HR Database
+            </remarks>
+            <returns>A List of Locations</returns>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.LocationController.GetSingleLocation(System.Int32)">
+            <summary>
+            Get a single Location.
+            </summary>
+            <remarks>
+            Get a single Location from Oracle HR Database
+            </remarks>
+            <returns>A Single Location</returns>
+            <response code="200">Success</response>
+            <response code="404">Not Found</response>
+            <param name="locationId">Location Id</param>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.RegionController.GetAllRegions">
+            <summary>
+            Get all Regions.
+            </summary>
+            <remarks>
+             Get all Regions from Oracle HR Database
+            </remarks>
+            <returns>A List of Regions</returns>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.RegionController.GetSingleRegion(System.Int32)">
+            <summary>
+            Get a single Region.
+            </summary>
+            <remarks>
+            Get a single Region from Oracle HR Database
+            </remarks>
+            <returns>A Single Region</returns>
+            <response code="200">Success</response>
+            <response code="404">Not Found</response>
+            <param name="regionId">Region Id</param>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.RegionController.AddRegion(OracleHR.Models.dbModels.Region)">
+            <summary>
+            Add New Region.
+            </summary>
+            <remarks>
+            Add a new Region to Oracle HR Database Region Table
+            </remarks>
+            <param name="region"></param>
+            <response code="201">Created</response>
+            <response code="500">Internal Server Error</response>
+            <response code="400">Bad Request</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.RegionController.UpdateRegion(OracleHR.Models.dbModels.Region,System.Int32)">
+            <summary>
+            Update a Region.
+            </summary>
+            <remarks>
+            Update a particular Region in the Oracle HR Database Region Table
+            </remarks>
+            <param name="region"></param>
+            <param name="regionId">Region Id</param>
+            <response code="201">Created</response>
+            <response code="500">Internal Server Error</response>
+            <response code="400">Bad Request</response>
+        </member>
+        <member name="M:OracleHR.Api.Controllers.RegionController.DeleteRegion(System.Int32)">
+            <summary>
+            Delete a Region.
+            </summary>
+            <remarks>
+            Remove a particular Region in the Oracle HR Database Region Table
+            </remarks>
+            <param name="regionId">Region Id</param>
+            <response code="500">Internal Server Error</response>
+            <response code="404">Region Deleted</response>
+        </member>
+    </members>
+</doc>
